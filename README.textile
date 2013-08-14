@@ -1,4 +1,4 @@
-.h1 VCR Rspec filtering sensitive data example
+h1. VCR Rspec filtering sensitive data example
 
 This is a small usage example on how to filter sensitive data from vcr cassettes when recording requests.
 
@@ -7,7 +7,7 @@ This is a small usage example on how to filter sensitive data from vcr cassettes
 
 For details please refer to spec/filtering.rb
 
-.h1 Usage
+h1. Usage
 
 * Start the sinatra hello world application: ruby hello_sinatra.rb
 * Open another terminal and start the test run using rspec spec/filtering.rb
