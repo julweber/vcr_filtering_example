@@ -1,0 +1,15 @@
+.h1 VCR Rspec filtering sensitive data example
+
+This is a small usage example on how to filter sensitive data from vcr cassettes when recording requests.
+
+* all occurences of world are substituted by <LOCATION>
+* all occurences of hello are substituded by <GREETING>
+
+For details please refer to spec/filtering.rb
+
+.h1 Usage
+
+* Start the sinatra hello world application: ruby hello_sinatra.rb
+* Open another terminal and start the test run using rspec spec/filtering.rb
+* Check the recorded cassette file in spec/cassettes/should_filter_the_hello_and_world_keywords.yml
+** It shouldn't contain any occurence of hello or world
